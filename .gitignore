@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.vscode/
+.pyc
+
+venv/
+data/processed/
+data/raw/
+secret.py
+*-checkpoint.ipynb
+
+
+# ignore h5 files
+*.h5
+
