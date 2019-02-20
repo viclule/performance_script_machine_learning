@@ -30,7 +30,7 @@ class Model:
         # target
         train_y = np.random.rand(number_of_datapoints, 1)
         train_y = self.target_range[0] + \
-                    train_x * (self.target_range[1] - self.target_range[0])
+                    train_y * (self.target_range[1] - self.target_range[0])
         return train_x, train_y
 
     def execute_predictions(self, number_of_predictions):
@@ -55,7 +55,7 @@ class Model:
         """
         train_x, train_y = \
             self._generate_dummy_data(self.number_of_training_points)
-
+        print(train_x.shape, train_y.shape)
         self.pipeline.fit(train_x, train_y)
 
     def get_number_of_features_combinations(self):

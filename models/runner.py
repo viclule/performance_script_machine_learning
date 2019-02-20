@@ -3,12 +3,12 @@ import sys, os
 from time import strftime
 
 from models.polynomials import PolynomialModel
-
+from models.neural_networks import NeuralNetworkModel
 
 def execution_time_polynomial(degree, number_of_features, times,
                               features_range=(0,1),
                               target_range=(0,1),
-                              number_of_training_points=5):
+                              number_of_training_points=100):
     """
     Measures the time it takes for a model to be executed.
         :param degree: degree of the polynomia
@@ -26,16 +26,15 @@ def execution_time_polynomial(degree, number_of_features, times,
     # execute the model
     execution_time = model.execute_predictions(times)
 
-    # get number pf features combinations
-    number_of_features_combinations = \
-        model.get_number_of_features_combinations()
-    return execution_time, number_of_features_combinations
+    # return time and number pf features combinations
+    return execution_time, model.get_number_of_features_combinations()
 
 
 def execution_time_neural_network(degree, number_of_features, times,
-                                features_range=(0,1),
-                                target_range=(0,1),
-                                number_of_training_points=5):
+                                  layers=(20,20,0,0),
+                                  features_range=(0,1),
+                                  target_range=(0,1),
+                                  number_of_training_points=100):
     """
     Measures the time it takes for a model to be executed.
         :param degree: degree of the polynomia
@@ -45,19 +44,66 @@ def execution_time_neural_network(degree, number_of_features, times,
         :returns: the execution time in miliseconds
     """
     # create a model instance
-    model = PolynomialModel(number_of_features, degree,
+    model = NeuralNetworkModel(number_of_features, degree,
                             features_range=features_range,
                             target_range=target_range,
                             number_of_training_points=number_of_training_points)
-    model.build_model()
+    model.build_model(layers=layers)
     # execute the model
     execution_time = model.execute_predictions(times)
 
-    # get number pf features combinations
-    number_of_features_combinations = \
-        model.get_number_of_features_combinations()
-    return execution_time, number_of_features_combinations
+    # return time and number pf features combinations
+    return execution_time, model.get_number_of_features_combinations()
 
+
+def execute_model_and_log(df, kind, degree, number_of_features,
+                          number_of_predictions,
+                          layers=(20,20,0,0)):
+    if kind == 'poly':
+        time, combinations = execution_time_polynomial(degree,
+                                number_of_features, number_of_predictions,
+                                features_range=(0,1),
+                                target_range=(0,1),
+                                number_of_training_points=100)
+        # insert result to dataframe
+        result = {'model_architecture': 'polynomial',
+                'number_of_features': number_of_features,
+                'degree': degree,
+                'number_of_elements': combinations,
+                'number_executions': number_of_predictions,
+                'execution_time': time,
+                'number_of_layers': None,
+                'input_layer_size': None,
+                'hidden_layer_1_size': None,
+                'hidden_layer_2_size': None,
+                'hidden_layer_3_size': None,
+                'output_layer': None,}
+        df.loc[len(df)] = result
+
+    elif kind == 'nn':
+        time, combinations = execution_time_neural_network(degree,
+                                number_of_features, number_of_predictions,
+                                layers=layers,
+                                features_range=(0,1),
+                                target_range=(0,1),
+                                number_of_training_points=100)
+        # insert result to dataframe
+        number_of_layers = len(layers) - layers.count(0) + 1
+        result = {'model_architecture': 'neural network',
+                'number_of_features': number_of_features,
+                'degree': degree,
+                'number_of_elements': combinations,
+                'number_executions': number_of_predictions,
+                'execution_time': time,
+                'number_of_layers': number_of_layers,
+                'input_layer_size': layers[0],
+                'hidden_layer_1_size': layers[1],
+                'hidden_layer_2_size': layers[2],
+                'hidden_layer_3_size': layers[3],
+                'output_layer': 1,}
+        df.loc[len(df)] = result
+    return df, time
+    
 
 def _generate_columns():
     columns = ['model_architecture',

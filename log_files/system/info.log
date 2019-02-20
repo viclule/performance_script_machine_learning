@@ -108,3 +108,126 @@
 2019-02-18 18:00:01,063 - __main__ - INFO - Polynomial took 2.0424726009368896 miliseconds to complete.
 2019-02-18 18:00:01,661 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
 2019-02-18 18:00:01,661 - __main__ - INFO - Polynomial took 0.5908293724060059 miliseconds to complete.
+2019-02-20 08:41:03,241 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:41:03,796 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 08:41:03,796 - __main__ - INFO - Polynomial took 0.5288093090057373 miliseconds to complete.
+2019-02-20 08:41:05,521 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 08:41:05,521 - __main__ - INFO - Polynomial took 1.7134828567504883 miliseconds to complete.
+2019-02-20 08:46:43,282 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:46:43,852 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 08:46:43,852 - __main__ - INFO - Polynomial took 0.5598397254943848 miliseconds to complete.
+2019-02-20 08:46:45,628 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 08:46:45,629 - __main__ - INFO - Polynomial took 1.7681982517242432 miliseconds to complete.
+2019-02-20 08:49:54,741 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:49:55,289 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 08:49:55,289 - __main__ - INFO - Polynomial took 0.5385327339172363 miliseconds to complete.
+2019-02-20 08:49:57,074 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 08:49:57,074 - __main__ - INFO - Polynomial took 1.7771785259246826 miliseconds to complete.
+2019-02-20 08:51:02,927 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:51:22,982 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:51:23,542 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 08:51:23,542 - __main__ - INFO - Polynomial took 0.5504474639892578 miliseconds to complete.
+2019-02-20 08:51:25,455 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 08:51:25,455 - __main__ - INFO - Polynomial took 1.905085802078247 miliseconds to complete.
+2019-02-20 08:59:39,795 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 08:59:40,314 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 08:59:40,314 - __main__ - INFO - Polynomial took 0.5109772682189941 miliseconds to complete.
+2019-02-20 08:59:42,026 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 08:59:42,026 - __main__ - INFO - Polynomial took 1.703965425491333 miliseconds to complete.
+2019-02-20 09:01:03,166 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:01:03,682 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:01:03,682 - __main__ - INFO - Polynomial took 0.507972240447998 miliseconds to complete.
+2019-02-20 09:01:05,349 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:01:05,350 - __main__ - INFO - Polynomial took 1.659388542175293 miliseconds to complete.
+2019-02-20 09:02:38,626 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:02:39,164 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:02:39,164 - __main__ - INFO - Polynomial took 0.5297074317932129 miliseconds to complete.
+2019-02-20 09:02:40,902 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:02:40,902 - __main__ - INFO - Polynomial took 1.7307212352752686 miliseconds to complete.
+2019-02-20 09:04:58,297 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:04:58,822 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:04:58,822 - __main__ - INFO - Polynomial took 0.5172591209411621 miliseconds to complete.
+2019-02-20 09:05:00,607 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:05:00,608 - __main__ - INFO - Polynomial took 1.7777354717254639 miliseconds to complete.
+2019-02-20 09:07:17,383 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:07:17,914 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:07:17,915 - __main__ - INFO - Polynomial took 0.5231733322143555 miliseconds to complete.
+2019-02-20 09:07:19,603 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:07:19,604 - __main__ - INFO - Polynomial took 1.680898904800415 miliseconds to complete.
+2019-02-20 09:07:42,860 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:07:43,382 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:07:43,383 - __main__ - INFO - Polynomial took 0.5141332149505615 miliseconds to complete.
+2019-02-20 09:07:45,105 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:07:45,105 - __main__ - INFO - Polynomial took 1.7129981517791748 miliseconds to complete.
+2019-02-20 09:08:21,573 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:08:22,119 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:08:22,119 - __main__ - INFO - Polynomial took 0.5347816944122314 miliseconds to complete.
+2019-02-20 09:08:27,294 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:08:27,294 - __main__ - INFO - Polynomial took 1.8322949409484863 miliseconds to complete.
+2019-02-20 09:33:28,692 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:33:29,280 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:33:29,280 - __main__ - INFO - Polynomial took 0.5778214931488037 miliseconds to complete.
+2019-02-20 09:33:34,018 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:33:34,018 - __main__ - INFO - Polynomial took 2.0116169452667236 miliseconds to complete.
+2019-02-20 09:35:16,811 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:35:17,365 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:35:17,365 - __main__ - INFO - Polynomial took 0.5438506603240967 miliseconds to complete.
+2019-02-20 09:35:21,125 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:35:21,125 - __main__ - INFO - Polynomial took 1.7554821968078613 miliseconds to complete.
+2019-02-20 09:41:27,114 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:41:27,664 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:41:27,664 - __main__ - INFO - Polynomial took 0.5405809879302979 miliseconds to complete.
+2019-02-20 09:41:31,715 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:41:31,716 - __main__ - INFO - Polynomial took 1.8052661418914795 miliseconds to complete.
+2019-02-20 09:45:26,895 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:45:27,432 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:45:27,432 - __main__ - INFO - Polynomial took 0.5262439250946045 miliseconds to complete.
+2019-02-20 09:45:31,379 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:45:31,379 - __main__ - INFO - Polynomial took 1.7082669734954834 miliseconds to complete.
+2019-02-20 09:45:32,837 - __main__ - INFO - Polynomial 1 with 10 features executed 1000 times.
+2019-02-20 09:45:32,837 - __main__ - INFO - Polynomial took 0.8810160160064697 miliseconds to complete.
+2019-02-20 09:45:55,419 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:45:55,982 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:45:55,982 - __main__ - INFO - Polynomial took 0.5528774261474609 miliseconds to complete.
+2019-02-20 09:45:59,126 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:45:59,126 - __main__ - INFO - Polynomial took 1.894418716430664 miliseconds to complete.
+2019-02-20 09:46:00,682 - __main__ - INFO - Polynomial 1 with 10 features executed 1000 times.
+2019-02-20 09:46:00,682 - __main__ - INFO - Polynomial took 1.1117231845855713 miliseconds to complete.
+2019-02-20 09:46:59,662 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:47:00,221 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:47:00,221 - __main__ - INFO - Polynomial took 0.5489451885223389 miliseconds to complete.
+2019-02-20 09:47:05,241 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:47:05,242 - __main__ - INFO - Polynomial took 1.8033640384674072 miliseconds to complete.
+2019-02-20 09:47:06,412 - __main__ - INFO - NN 1 with 10 features executed 1000 times.
+2019-02-20 09:47:06,412 - __main__ - INFO - NN took 0.7235393524169922 miliseconds to complete.
+2019-02-20 09:51:41,369 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 09:51:41,899 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 09:51:41,899 - __main__ - INFO - Polynomial took 0.5191686153411865 miliseconds to complete.
+2019-02-20 09:51:46,207 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 09:51:46,207 - __main__ - INFO - Polynomial took 1.700683355331421 miliseconds to complete.
+2019-02-20 09:51:47,303 - __main__ - INFO - NN 1 with 10 features executed 1000 times.
+2019-02-20 09:51:47,304 - __main__ - INFO - NN took 0.6730329990386963 miliseconds to complete.
+2019-02-20 10:02:46,154 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:03:08,789 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:03:09,355 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 10:03:09,355 - __main__ - INFO - Polynomial took 0.5526916980743408 miliseconds to complete.
+2019-02-20 10:03:13,322 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 10:03:13,323 - __main__ - INFO - Polynomial took 1.6522438526153564 miliseconds to complete.
+2019-02-20 10:03:14,423 - __main__ - INFO - NN 1 with 10 features executed 1000 times.
+2019-02-20 10:03:14,423 - __main__ - INFO - NN took 0.6691503524780273 miliseconds to complete.
+2019-02-20 10:05:11,939 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:05:12,493 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 10:05:12,493 - __main__ - INFO - Polynomial took 0.5387325286865234 miliseconds to complete.
+2019-02-20 10:05:16,948 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 10:05:16,948 - __main__ - INFO - Polynomial took 1.768202543258667 miliseconds to complete.
+2019-02-20 10:05:18,078 - __main__ - INFO - NN 1 with 10 features executed 1000 times.
+2019-02-20 10:05:18,078 - __main__ - INFO - NN took 0.6910839080810547 miliseconds to complete.
+2019-02-20 10:05:51,633 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:05:52,164 - __main__ - INFO - Polynomial 2 with 10 features executed 1000 times.
+2019-02-20 10:05:52,164 - __main__ - INFO - Polynomial took 0.5173332691192627 miliseconds to complete.
+2019-02-20 10:05:56,797 - __main__ - INFO - Polynomial 3 with 10 features executed 1000 times.
+2019-02-20 10:05:56,797 - __main__ - INFO - Polynomial took 1.7058067321777344 miliseconds to complete.
+2019-02-20 10:05:57,876 - __main__ - INFO - NN 1 with 10 features executed 1000 times.
+2019-02-20 10:05:57,876 - __main__ - INFO - NN took 0.668928861618042 miliseconds to complete.
+2019-02-20 10:05:59,317 - __main__ - INFO - NN 2 with 10 features executed 1000 times.
+2019-02-20 10:05:59,317 - __main__ - INFO - NN took 1.0338761806488037 miliseconds to complete.

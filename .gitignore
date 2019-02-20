@@ -11,6 +11,6 @@ secret.py
 *-checkpoint.ipynb
 
 
-# ignore h5 files
+# ignore h5 and csv files
 *.h5
-
+*.csv
