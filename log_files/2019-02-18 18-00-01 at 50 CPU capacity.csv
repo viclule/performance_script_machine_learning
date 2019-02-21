@@ -1,4 +1,0 @@
-;model_architecture;number_of_features;degree;number_of_elements;number_executions;execution_time;number_of_layers;input_layer_size;hidden_layer_1_size;hidden_layer_2_size;hidden_layer_3_size;output_layer
-0;polynomial;10;2;66;1000;0.5341620445251465;;;;;;
-1;polynomial;10;3;286;1000;2.0424726009368896;;;;;;
-2;polynomial;10;2;66;1000;0.5908293724060059;;;;;;

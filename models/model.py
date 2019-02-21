@@ -55,7 +55,6 @@ class Model:
         """
         train_x, train_y = \
             self._generate_dummy_data(self.number_of_training_points)
-        print(train_x.shape, train_y.shape)
         self.pipeline.fit(train_x, train_y)
 
     def get_number_of_features_combinations(self):

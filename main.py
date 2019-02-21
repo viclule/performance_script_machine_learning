@@ -11,11 +11,10 @@ from logging_config import setup_logging
 setup_logging()
 logger = logging.getLogger(__name__)
 
-from models.runner import (execution_time_polynomial,
-                           execution_time_neural_network,
-                           execute_model_and_log,
+from models.runner import (execute_model_and_log,
                            generate_empty_dataframe,
                            save_df_to_csv)
+from models_config import tests
 
 
 if __name__ == '__main__':
@@ -27,79 +26,19 @@ if __name__ == '__main__':
     # create empty dataframe to collect the results
     df = generate_empty_dataframe()
 
-
-    # Polynomial degree 2 model execution time
-    degree = 2
-    number_of_features = 10
-    number_of_predictions = 1000
-
-    df, time = execute_model_and_log(df,
-                                    'poly',
-                                    degree,
-                                    number_of_features,
-                                    number_of_predictions)
-    # logging
-    logger.info('Polynomial {} with {} features executed {} times.'.format(
-                degree, number_of_features, number_of_predictions))
-    logger.info('Polynomial took {} miliseconds to complete.'.format(time))
-
-
-
-    # Polynomial degree 3 model execution time
-    degree = 3
-    number_of_features = 10
-    number_of_predictions = 1000
-
-    df, time = execute_model_and_log(df,
-                                    'poly',
-                                    degree,
-                                    number_of_features,
-                                    number_of_predictions)
-    # logging
-    logger.info('Polynomial {} with {} features executed {} times.'.format(
-                degree, number_of_features, number_of_predictions))
-    logger.info('Polynomial took {} miliseconds to complete.'.format(time))
-
-
-
-    # NN degree 1, 1 hidden layermodel execution time
-    degree = 1
-    number_of_features = 10
-    layers=(20,20,0,0)
-    number_of_layers = len(layers) - layers.count(0) + 1
-    number_of_predictions = 1000
-
-    df, time = execute_model_and_log(df,
-                                    'nn',
-                                    degree,
-                                    number_of_features,
-                                    number_of_predictions,
-                                    layers=layers)
-    # logging
-    logger.info('NN {} with {} features executed {} times.'.format(
-                degree, number_of_features, number_of_predictions))
-    logger.info('NN took {} miliseconds to complete.'.format(time))
-
-
-
-    # NN degree 2, 1 hidden layermodel execution time
-    degree = 2
-    number_of_features = 10
-    layers=(20,20,0,0)
-    number_of_layers = len(layers) - layers.count(0) + 1
-    number_of_predictions = 1000
-
-    df, time = execute_model_and_log(df,
-                                    'nn',
-                                    degree,
-                                    number_of_features,
-                                    number_of_predictions,
-                                    layers=layers)
-    # logging
-    logger.info('NN {} with {} features executed {} times.'.format(
-                degree, number_of_features, number_of_predictions))
-    logger.info('NN took {} miliseconds to complete.'.format(time))
-
+    # run the tests
+    for _, test in tests.items():
+        df, time = execute_model_and_log(df,
+                                        test['type'],
+                                        test['degree'],
+                                        test['number_of_features'],
+                                        test['number_of_predictions'],
+                                        layers=test['layers'])
+        # log it
+        logger.info('Model {}, degree {} with {} features executed {} times.'.format(
+                    test['type'], test['degree'], test['number_of_features'],
+                    test['number_of_predictions']))
+        logger.info('Polynomial took {} miliseconds to complete.'.format(time))
 
     # save to csv
     save_df_to_csv(df, processor_capacity)

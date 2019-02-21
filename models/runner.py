@@ -5,7 +5,7 @@ from time import strftime
 from models.polynomials import PolynomialModel
 from models.neural_networks import NeuralNetworkModel
 
-def execution_time_polynomial(degree, number_of_features, times,
+def _execution_time_polynomial(degree, number_of_features, times,
                               features_range=(0,1),
                               target_range=(0,1),
                               number_of_training_points=100):
@@ -30,7 +30,7 @@ def execution_time_polynomial(degree, number_of_features, times,
     return execution_time, model.get_number_of_features_combinations()
 
 
-def execution_time_neural_network(degree, number_of_features, times,
+def _execution_time_neural_network(degree, number_of_features, times,
                                   layers=(20,20,0,0),
                                   features_range=(0,1),
                                   target_range=(0,1),
@@ -60,7 +60,7 @@ def execute_model_and_log(df, kind, degree, number_of_features,
                           number_of_predictions,
                           layers=(20,20,0,0)):
     if kind == 'poly':
-        time, combinations = execution_time_polynomial(degree,
+        time, combinations = _execution_time_polynomial(degree,
                                 number_of_features, number_of_predictions,
                                 features_range=(0,1),
                                 target_range=(0,1),
@@ -81,7 +81,7 @@ def execute_model_and_log(df, kind, degree, number_of_features,
         df.loc[len(df)] = result
 
     elif kind == 'nn':
-        time, combinations = execution_time_neural_network(degree,
+        time, combinations = _execution_time_neural_network(degree,
                                 number_of_features, number_of_predictions,
                                 layers=layers,
                                 features_range=(0,1),

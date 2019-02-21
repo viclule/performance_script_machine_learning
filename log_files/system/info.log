@@ -231,3 +231,71 @@
 2019-02-20 10:05:57,876 - __main__ - INFO - NN took 0.668928861618042 miliseconds to complete.
 2019-02-20 10:05:59,317 - __main__ - INFO - NN 2 with 10 features executed 1000 times.
 2019-02-20 10:05:59,317 - __main__ - INFO - NN took 1.0338761806488037 miliseconds to complete.
+2019-02-20 10:41:43,173 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:41:50,520 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:41:50,520 - __main__ - INFO - Polynomial took 1.000023365020752 miliseconds to complete.
+2019-02-20 10:42:30,379 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:42:30,916 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:42:30,916 - __main__ - INFO - Polynomial took 0.5229771137237549 miliseconds to complete.
+2019-02-20 10:42:34,753 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-02-20 10:42:34,753 - __main__ - INFO - Polynomial took 1.6769907474517822 miliseconds to complete.
+2019-02-20 10:42:35,876 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:42:35,876 - __main__ - INFO - Polynomial took 0.6803228855133057 miliseconds to complete.
+2019-02-20 10:42:37,365 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:42:37,365 - __main__ - INFO - Polynomial took 1.0380892753601074 miliseconds to complete.
+2019-02-20 10:44:05,755 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:44:06,326 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:44:06,327 - __main__ - INFO - Polynomial took 0.5413477420806885 miliseconds to complete.
+2019-02-20 10:44:10,499 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-02-20 10:44:10,500 - __main__ - INFO - Polynomial took 1.7482702732086182 miliseconds to complete.
+2019-02-20 10:44:11,578 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:44:11,578 - __main__ - INFO - Polynomial took 0.6522066593170166 miliseconds to complete.
+2019-02-20 10:44:12,983 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:44:12,984 - __main__ - INFO - Polynomial took 0.9996287822723389 miliseconds to complete.
+2019-02-20 10:45:06,876 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:45:07,434 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:45:07,434 - __main__ - INFO - Polynomial took 0.5435583591461182 miliseconds to complete.
+2019-02-20 10:45:10,659 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-02-20 10:45:10,659 - __main__ - INFO - Polynomial took 1.7652835845947266 miliseconds to complete.
+2019-02-20 10:45:11,783 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:45:11,783 - __main__ - INFO - Polynomial took 0.6811561584472656 miliseconds to complete.
+2019-02-20 10:45:13,205 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:45:13,206 - __main__ - INFO - Polynomial took 1.019364595413208 miliseconds to complete.
+2019-02-20 10:45:14,453 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:45:14,453 - __main__ - INFO - Polynomial took 0.7291853427886963 miliseconds to complete.
+2019-02-20 10:45:16,102 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:45:16,102 - __main__ - INFO - Polynomial took 1.0690901279449463 miliseconds to complete.
+2019-02-20 10:46:21,277 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-20 10:46:21,808 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:46:21,808 - __main__ - INFO - Polynomial took 0.5169451236724854 miliseconds to complete.
+2019-02-20 10:46:25,539 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-02-20 10:46:25,539 - __main__ - INFO - Polynomial took 1.9280717372894287 miliseconds to complete.
+2019-02-20 10:46:27,017 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:46:27,017 - __main__ - INFO - Polynomial took 1.026749610900879 miliseconds to complete.
+2019-02-20 10:46:28,430 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:46:28,430 - __main__ - INFO - Polynomial took 1.0037603378295898 miliseconds to complete.
+2019-02-20 10:46:29,675 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:46:29,676 - __main__ - INFO - Polynomial took 0.7260665893554688 miliseconds to complete.
+2019-02-20 10:46:31,329 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:46:31,329 - __main__ - INFO - Polynomial took 1.054121971130371 miliseconds to complete.
+2019-02-20 10:46:32,838 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-20 10:46:32,838 - __main__ - INFO - Polynomial took 0.8143000602722168 miliseconds to complete.
+2019-02-20 10:46:34,699 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-20 10:46:34,699 - __main__ - INFO - Polynomial took 1.1411712169647217 miliseconds to complete.
+2019-02-21 10:11:56,946 - __main__ - INFO - Script is starting with CPU at 50 %.
+2019-02-21 10:11:57,477 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-02-21 10:11:57,477 - __main__ - INFO - Polynomial took 0.5171947479248047 miliseconds to complete.
+2019-02-21 10:12:01,795 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-02-21 10:12:01,795 - __main__ - INFO - Polynomial took 1.6918659210205078 miliseconds to complete.
+2019-02-21 10:12:03,009 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-21 10:12:03,009 - __main__ - INFO - Polynomial took 0.7866897583007812 miliseconds to complete.
+2019-02-21 10:12:04,380 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-21 10:12:04,380 - __main__ - INFO - Polynomial took 0.9625728130340576 miliseconds to complete.
+2019-02-21 10:12:05,601 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-21 10:12:05,601 - __main__ - INFO - Polynomial took 0.7104244232177734 miliseconds to complete.
+2019-02-21 10:12:07,301 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-21 10:12:07,301 - __main__ - INFO - Polynomial took 1.1014199256896973 miliseconds to complete.
+2019-02-21 10:12:08,756 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-02-21 10:12:08,756 - __main__ - INFO - Polynomial took 0.7686159610748291 miliseconds to complete.
+2019-02-21 10:12:10,560 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-02-21 10:12:10,560 - __main__ - INFO - Polynomial took 1.115684986114502 miliseconds to complete.
