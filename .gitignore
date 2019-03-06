@@ -14,3 +14,6 @@ secret.py
 # ignore h5 and csv files
 *.h5
 *.csv
+
+# ignore notebooks
+*.ipynb

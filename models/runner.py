@@ -4,6 +4,8 @@ from time import strftime
 
 from models.polynomials import PolynomialModel
 from models.neural_networks import NeuralNetworkModel
+from fft.fft import calculate_fft
+
 
 def _execution_time_polynomial(degree, number_of_features, times,
                               features_range=(0,1),
@@ -59,6 +61,7 @@ def _execution_time_neural_network(degree, number_of_features, times,
 def execute_model_and_log(df, kind, degree, number_of_features,
                           number_of_predictions,
                           layers=(20,20,0,0)):
+    result = dict.fromkeys(_generate_columns())
     if kind == 'poly':
         time, combinations = _execution_time_polynomial(degree,
                                 number_of_features, number_of_predictions,
@@ -66,18 +69,12 @@ def execute_model_and_log(df, kind, degree, number_of_features,
                                 target_range=(0,1),
                                 number_of_training_points=100)
         # insert result to dataframe
-        result = {'model_architecture': 'polynomial',
-                'number_of_features': number_of_features,
-                'degree': degree,
-                'number_of_elements': combinations,
-                'number_executions': number_of_predictions,
-                'execution_time': time,
-                'number_of_layers': None,
-                'input_layer_size': None,
-                'hidden_layer_1_size': None,
-                'hidden_layer_2_size': None,
-                'hidden_layer_3_size': None,
-                'output_layer': None,}
+        result['model_architecture'] = 'polynomial'
+        result['number_of_features'] = number_of_features
+        result['degree'] = degree
+        result['number_of_elements'] = combinations
+        result['number_executions'] = number_of_predictions
+        result['execution_time'] = time
         df.loc[len(df)] = result
 
     elif kind == 'nn':
@@ -89,19 +86,33 @@ def execute_model_and_log(df, kind, degree, number_of_features,
                                 number_of_training_points=100)
         # insert result to dataframe
         number_of_layers = len(layers) - layers.count(0) + 1
-        result = {'model_architecture': 'neural network',
-                'number_of_features': number_of_features,
-                'degree': degree,
-                'number_of_elements': combinations,
-                'number_executions': number_of_predictions,
-                'execution_time': time,
-                'number_of_layers': number_of_layers,
-                'input_layer_size': layers[0],
-                'hidden_layer_1_size': layers[1],
-                'hidden_layer_2_size': layers[2],
-                'hidden_layer_3_size': layers[3],
-                'output_layer': 1,}
+        result['model_architecture'] = 'neural network'
+        result['number_of_features'] = number_of_features
+        result['degree'] = degree
+        result['number_of_elements'] = combinations
+        result['number_executions'] = number_of_predictions
+        result['execution_time'] = time
+        result['number_of_layers'] = number_of_layers
+        result['input_layer_size'] = layers[0]
+        result['hidden_layer_1_size'] = layers[1]
+        result['hidden_layer_2_size'] = layers[2]
+        result['hidden_layer_3_size'] = layers[3]
+        result['output_layer'] = 1
         df.loc[len(df)] = result
+    return df, time
+
+
+def execute_fft_and_log(df, file_name, number_of_executions):
+    time, rate, size = calculate_fft(file_name, number_of_executions)
+    # insert result to dataframe
+    result = dict.fromkeys(_generate_columns())
+    result['model_architecture'] = 'fft'
+    result['sound_file_name'] = file_name
+    result['sound_file_size'] = size
+    result['sound_file_rate'] = rate
+    result['number_executions'] = number_of_executions
+    result['execution_time'] = time
+    df.loc[len(df)] = result
     return df, time
     
 
@@ -117,7 +128,11 @@ def _generate_columns():
                'hidden_layer_1_size',
                'hidden_layer_2_size',
                'hidden_layer_3_size',
-               'output_layer'
+               'output_layer',
+               'sound_file_name',
+               'sound_file_size',
+               'sound_file_rate',
+               'function_optimized'
                ]
     return columns
 

@@ -12,9 +12,10 @@ setup_logging()
 logger = logging.getLogger(__name__)
 
 from models.runner import (execute_model_and_log,
+                           execute_fft_and_log,
                            generate_empty_dataframe,
                            save_df_to_csv)
-from models_config import tests
+from models_config import tests, tests_fft
 
 
 if __name__ == '__main__':
@@ -26,7 +27,7 @@ if __name__ == '__main__':
     # create empty dataframe to collect the results
     df = generate_empty_dataframe()
 
-    # run the tests
+    # run the model tests
     for _, test in tests.items():
         df, time = execute_model_and_log(df,
                                         test['type'],
@@ -38,7 +39,19 @@ if __name__ == '__main__':
         logger.info('Model {}, degree {} with {} features executed {} times.'.format(
                     test['type'], test['degree'], test['number_of_features'],
                     test['number_of_predictions']))
-        logger.info('Polynomial took {} miliseconds to complete.'.format(time))
+        logger.info('Model took {} miliseconds to complete.'.format(time))
+
+    # run the fft tests
+    for _, test in tests_fft.items():
+        df, time = execute_fft_and_log(df,
+                                        test['file_name'],
+                                        test['number_of_executions'])
+        # log it
+        logger.info('FFT ran on file {} executed {} times.'.format(
+                    test['file_name'], test['number_of_executions']))
+        logger.info('FFT ran on file {} took {} miliseconds to complete.'.format(
+                    test['file_name'], time))
+
 
     # save to csv
     save_df_to_csv(df, processor_capacity)
