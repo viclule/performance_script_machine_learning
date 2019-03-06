@@ -6,3 +6,5 @@ It can be used to compare the performance of different platforms/processors for 
 
 - Linear models
 - Sequential Neural Networks
+- FFT transformations
+- Particle Swarm Optimizer
