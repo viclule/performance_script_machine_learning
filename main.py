@@ -11,11 +11,12 @@ from logging_config import setup_logging
 setup_logging()
 logger = logging.getLogger(__name__)
 
-from models.runner import (execute_model_and_log,
-                           execute_fft_and_log,
-                           generate_empty_dataframe,
-                           save_df_to_csv)
-from models_config import tests, tests_fft
+from runner import (execute_model_and_log,
+                    execute_fft_and_log,
+                    execute_optimization_and_log,
+                    generate_empty_dataframe,
+                    save_df_to_csv)
+from models_config import tests, tests_fft, tests_pso
 
 
 if __name__ == '__main__':
@@ -51,7 +52,19 @@ if __name__ == '__main__':
                     test['file_name'], test['number_of_executions']))
         logger.info('FFT ran on file {} took {} miliseconds to complete.'.format(
                     test['file_name'], time))
-
+    
+    # run the optimization tests
+    for _, test in tests_pso.items():
+        df, time = execute_optimization_and_log(df,
+                                                test['type'],
+                                                test['number_of_dimensions'],
+                                                test['number_of_iterations'],
+                                                test['number_of_executions'],)
+        # log it
+        logger.info('Optimizer type {} executed {} times.'.format(
+                    test['type'], test['number_of_executions']))
+        logger.info('Optimizer type {} took {} miliseconds to complete.'.format(
+                    test['type'], time))
 
     # save to csv
     save_df_to_csv(df, processor_capacity)

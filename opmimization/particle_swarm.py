@@ -137,7 +137,8 @@ class ParticleSwarmOptimizer():
         self.acc_coefficient_1 = acc_coefficient_1
         self.acc_coefficient_2 = acc_coefficient_2
 
-    def optimize(self, n_iterations, print_opt=False):
+    def optimize(self, n_iterations, run_full_iterations=False,
+                 print_opt=False):
         """
         Run the optimizer
             :param self: 
@@ -148,16 +149,15 @@ class ParticleSwarmOptimizer():
         while(iteration < n_iterations):
             self.search_space.set_pbest()    
             self.search_space.set_gbest()
-
-            if(abs(self.search_space.gbest_value - \
-                  self.search_space.target) <= self.search_space.target_error):
-                # finish the search
-                break
+            if not run_full_iterations:
+                if(abs(self.search_space.gbest_value - \
+                    self.search_space.target) <= \
+                        self.search_space.target_error):
+                    # finish the search
+                    break
 
             self.search_space.move_particles()
             iteration += 1
         if print_opt:
             print("The best solution is: ", self.search_space.gbest_position,
                 " in n_iterations: ", iteration)
-
- 

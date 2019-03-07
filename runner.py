@@ -1,10 +1,13 @@
 import pandas as pd
 import sys, os
 from time import strftime
+import time
 
 from models.polynomials import PolynomialModel
 from models.neural_networks import NeuralNetworkModel
 from fft.fft import calculate_fft
+from opmimization.particle_swarm import ParticleSwarmOptimizer as PSO
+from opmimization.sample_functions import sum_of_squares
 
 
 def _execution_time_polynomial(degree, number_of_features, times,
@@ -63,7 +66,7 @@ def execute_model_and_log(df, kind, degree, number_of_features,
                           layers=(20,20,0,0)):
     result = dict.fromkeys(_generate_columns())
     if kind == 'poly':
-        time, combinations = _execution_time_polynomial(degree,
+        time_, combinations = _execution_time_polynomial(degree,
                                 number_of_features, number_of_predictions,
                                 features_range=(0,1),
                                 target_range=(0,1),
@@ -74,11 +77,11 @@ def execute_model_and_log(df, kind, degree, number_of_features,
         result['degree'] = degree
         result['number_of_elements'] = combinations
         result['number_executions'] = number_of_predictions
-        result['execution_time'] = time
+        result['execution_time'] = time_
         df.loc[len(df)] = result
 
     elif kind == 'nn':
-        time, combinations = _execution_time_neural_network(degree,
+        time_, combinations = _execution_time_neural_network(degree,
                                 number_of_features, number_of_predictions,
                                 layers=layers,
                                 features_range=(0,1),
@@ -91,7 +94,7 @@ def execute_model_and_log(df, kind, degree, number_of_features,
         result['degree'] = degree
         result['number_of_elements'] = combinations
         result['number_executions'] = number_of_predictions
-        result['execution_time'] = time
+        result['execution_time'] = time_
         result['number_of_layers'] = number_of_layers
         result['input_layer_size'] = layers[0]
         result['hidden_layer_1_size'] = layers[1]
@@ -99,11 +102,11 @@ def execute_model_and_log(df, kind, degree, number_of_features,
         result['hidden_layer_3_size'] = layers[3]
         result['output_layer'] = 1
         df.loc[len(df)] = result
-    return df, time
+    return df, time_
 
 
 def execute_fft_and_log(df, file_name, number_of_executions):
-    time, rate, size = calculate_fft(file_name, number_of_executions)
+    time_, rate, size = calculate_fft(file_name, number_of_executions)
     # insert result to dataframe
     result = dict.fromkeys(_generate_columns())
     result['model_architecture'] = 'fft'
@@ -111,10 +114,34 @@ def execute_fft_and_log(df, file_name, number_of_executions):
     result['sound_file_size'] = size
     result['sound_file_rate'] = rate
     result['number_executions'] = number_of_executions
-    result['execution_time'] = time
+    result['execution_time'] = time_
     df.loc[len(df)] = result
-    return df, time
-    
+    return df, time_
+
+
+def execute_optimization_and_log(df, kind, number_of_dimensions,
+                                number_of_iterations, number_of_executions):
+    if kind == 'pso':
+        optimizer = PSO(sum_of_squares, number_of_dimensions, 1, 0.000001, 30)
+    else:
+        raise NotImplementedError
+    # run the optimizer
+    start = time.time()
+    for _ in range(number_of_executions):
+        optimizer.optimize(number_of_iterations, run_full_iterations=True,
+                            print_opt=False)
+    time_ = time.time() - start
+    # insert result to dataframe
+    result = dict.fromkeys(_generate_columns())
+    result['model_architecture'] = kind
+    result['number_executions'] = number_of_executions
+    result['execution_time'] = time_
+    result['number_of_dimensions'] = number_of_dimensions
+    result['number_of_iterations'] = number_of_iterations
+    result['function_optimized'] = 'sum_of_squares'
+    df.loc[len(df)] = result
+    return df, time_
+
 
 def _generate_columns():
     columns = ['model_architecture',
@@ -132,7 +159,9 @@ def _generate_columns():
                'sound_file_name',
                'sound_file_size',
                'sound_file_rate',
-               'function_optimized'
+               'function_optimized',
+               'number_of_dimensions',
+               'number_of_iterations'
                ]
     return columns
 
