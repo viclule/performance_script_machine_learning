@@ -440,3 +440,90 @@
 2019-03-07 14:52:45,566 - __main__ - INFO - Script is starting with CPU at 100.0 %.
 2019-03-07 14:52:46,175 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
 2019-03-07 14:52:46,175 - __main__ - INFO - Model took 0.5754053592681885 miliseconds to complete.
+2019-04-09 14:56:11,751 - __main__ - INFO - Script is starting with CPU at 100.0 %.
+2019-04-09 14:56:12,245 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:56:12,245 - __main__ - INFO - Model took 0.48142051696777344 miliseconds to complete.
+2019-04-09 14:56:15,820 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-04-09 14:56:15,820 - __main__ - INFO - Model took 1.6680829524993896 miliseconds to complete.
+2019-04-09 14:56:16,801 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:56:16,801 - __main__ - INFO - Model took 0.6075551509857178 miliseconds to complete.
+2019-04-09 14:56:18,146 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:56:18,146 - __main__ - INFO - Model took 0.9726109504699707 miliseconds to complete.
+2019-04-09 14:56:19,276 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:56:19,277 - __main__ - INFO - Model took 0.6789412498474121 miliseconds to complete.
+2019-04-09 14:56:20,830 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:56:20,830 - __main__ - INFO - Model took 1.0278277397155762 miliseconds to complete.
+2019-04-09 14:56:22,202 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:56:22,202 - __main__ - INFO - Model took 0.74082350730896 miliseconds to complete.
+2019-04-09 14:56:23,971 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:56:23,971 - __main__ - INFO - Model took 1.0596952438354492 miliseconds to complete.
+2019-04-09 14:56:24,065 - __main__ - INFO - FFT ran on file short.wav executed 100 times.
+2019-04-09 14:56:24,065 - __main__ - INFO - FFT ran on file short.wav took 0.0885305404663086 miliseconds to complete.
+2019-04-09 14:56:25,182 - __main__ - INFO - FFT ran on file medium.wav executed 100 times.
+2019-04-09 14:56:25,182 - __main__ - INFO - FFT ran on file medium.wav took 1.1114916801452637 miliseconds to complete.
+2019-04-09 14:57:20,404 - __main__ - INFO - FFT ran on file long.wav executed 1 times.
+2019-04-09 14:57:20,404 - __main__ - INFO - FFT ran on file long.wav took 55.215598583221436 miliseconds to complete.
+2019-04-09 14:57:20,545 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:57:20,545 - __main__ - INFO - Optimizer type pso took 0.1362743377685547 miliseconds to complete.
+2019-04-09 14:57:20,706 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:57:20,707 - __main__ - INFO - Optimizer type pso took 0.1558518409729004 miliseconds to complete.
+2019-04-09 14:57:20,878 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:57:20,878 - __main__ - INFO - Optimizer type pso took 0.1663341522216797 miliseconds to complete.
+2019-04-09 14:58:45,210 - __main__ - INFO - Script is starting with CPU at 100.0 %.
+2019-04-09 14:58:45,704 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:58:45,704 - __main__ - INFO - Model took 0.4811131954193115 miliseconds to complete.
+2019-04-09 14:58:51,199 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-04-09 14:58:51,199 - __main__ - INFO - Model took 1.7361891269683838 miliseconds to complete.
+2019-04-09 14:58:52,256 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:58:52,256 - __main__ - INFO - Model took 0.6332781314849854 miliseconds to complete.
+2019-04-09 14:58:53,590 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:58:53,591 - __main__ - INFO - Model took 0.9698219299316406 miliseconds to complete.
+2019-04-09 14:58:54,726 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:58:54,726 - __main__ - INFO - Model took 0.6705143451690674 miliseconds to complete.
+2019-04-09 14:58:56,236 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:58:56,236 - __main__ - INFO - Model took 0.9695346355438232 miliseconds to complete.
+2019-04-09 14:58:57,562 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 14:58:57,562 - __main__ - INFO - Model took 0.7436020374298096 miliseconds to complete.
+2019-04-09 14:58:59,297 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 14:58:59,297 - __main__ - INFO - Model took 1.0685772895812988 miliseconds to complete.
+2019-04-09 14:58:59,385 - __main__ - INFO - FFT ran on file short.wav executed 100 times.
+2019-04-09 14:58:59,385 - __main__ - INFO - FFT ran on file short.wav took 0.08310937881469727 miliseconds to complete.
+2019-04-09 14:59:00,479 - __main__ - INFO - FFT ran on file medium.wav executed 100 times.
+2019-04-09 14:59:00,479 - __main__ - INFO - FFT ran on file medium.wav took 1.088054895401001 miliseconds to complete.
+2019-04-09 14:59:56,303 - __main__ - INFO - FFT ran on file long.wav executed 1 times.
+2019-04-09 14:59:56,303 - __main__ - INFO - FFT ran on file long.wav took 55.817952156066895 miliseconds to complete.
+2019-04-09 14:59:56,461 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:59:56,461 - __main__ - INFO - Optimizer type pso took 0.1511390209197998 miliseconds to complete.
+2019-04-09 14:59:56,628 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:59:56,628 - __main__ - INFO - Optimizer type pso took 0.16164875030517578 miliseconds to complete.
+2019-04-09 14:59:56,810 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 14:59:56,811 - __main__ - INFO - Optimizer type pso took 0.1773221492767334 miliseconds to complete.
+2019-04-09 15:08:39,982 - __main__ - INFO - Script is starting with CPU at 100.0 %.
+2019-04-09 15:08:40,505 - __main__ - INFO - Model poly, degree 2 with 10 features executed 1000 times.
+2019-04-09 15:08:40,505 - __main__ - INFO - Model took 0.5065665245056152 miliseconds to complete.
+2019-04-09 15:08:45,789 - __main__ - INFO - Model poly, degree 3 with 10 features executed 1000 times.
+2019-04-09 15:08:45,789 - __main__ - INFO - Model took 1.711379051208496 miliseconds to complete.
+2019-04-09 15:08:46,802 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 15:08:46,802 - __main__ - INFO - Model took 0.6265614032745361 miliseconds to complete.
+2019-04-09 15:08:48,149 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 15:08:48,149 - __main__ - INFO - Model took 0.9536776542663574 miliseconds to complete.
+2019-04-09 15:08:49,534 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 15:08:49,535 - __main__ - INFO - Model took 0.6731071472167969 miliseconds to complete.
+2019-04-09 15:08:51,195 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 15:08:51,195 - __main__ - INFO - Model took 1.0665113925933838 miliseconds to complete.
+2019-04-09 15:08:52,595 - __main__ - INFO - Model nn, degree 1 with 10 features executed 1000 times.
+2019-04-09 15:08:52,595 - __main__ - INFO - Model took 0.7712397575378418 miliseconds to complete.
+2019-04-09 15:08:54,380 - __main__ - INFO - Model nn, degree 2 with 10 features executed 1000 times.
+2019-04-09 15:08:54,380 - __main__ - INFO - Model took 1.10579252243042 miliseconds to complete.
+2019-04-09 15:08:54,478 - __main__ - INFO - FFT ran on file short.wav executed 100 times.
+2019-04-09 15:08:54,478 - __main__ - INFO - FFT ran on file short.wav took 0.09189653396606445 miliseconds to complete.
+2019-04-09 15:08:55,614 - __main__ - INFO - FFT ran on file medium.wav executed 100 times.
+2019-04-09 15:08:55,614 - __main__ - INFO - FFT ran on file medium.wav took 1.12892484664917 miliseconds to complete.
+2019-04-09 15:09:52,838 - __main__ - INFO - FFT ran on file long.wav executed 1 times.
+2019-04-09 15:09:52,838 - __main__ - INFO - FFT ran on file long.wav took 57.216808557510376 miliseconds to complete.
+2019-04-09 15:09:52,989 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 15:09:52,989 - __main__ - INFO - Optimizer type pso took 0.14563441276550293 miliseconds to complete.
+2019-04-09 15:09:53,156 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 15:09:53,156 - __main__ - INFO - Optimizer type pso took 0.16083192825317383 miliseconds to complete.
+2019-04-09 15:09:53,330 - __main__ - INFO - Optimizer type pso executed 10 times.
+2019-04-09 15:09:53,331 - __main__ - INFO - Optimizer type pso took 0.16895723342895508 miliseconds to complete.

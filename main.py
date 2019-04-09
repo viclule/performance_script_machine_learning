@@ -24,7 +24,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         processor_capacity = sys.argv[1]
     else:
-        processor_capacity = 100.0
+        processor_capacity = "100.0"
     logger.info(
         'Script is starting with CPU at {} %.'.format(processor_capacity))
 
